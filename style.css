@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hero .date {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.couple {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.bride, .groom {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.bride img, .groom img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    margin: 40px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.event {
+    margin: 30px 0;
+}
+
+.event h3 {
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.rsvp {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rsvp h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #8b4513;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6b3610;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero h2 {
+        font-size: 1.4em;
+    }
+    
+    .couple {
+        flex-direction: column;
+    }
+    
+    .rsvp {
+        padding: 20px;
+    }
+} 
